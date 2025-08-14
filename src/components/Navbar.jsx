@@ -106,7 +106,7 @@ const Navbar = () => {
         {/* Drawer Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
           <div className="flex items-center gap-3">
-            <img src="/growtalyst.png" alt="Growtalyst" className="w-9 h-9" />
+            <img src="/images/growtalyst.png" alt="Growtalyst" className="w-9 h-9" />
             <span className="font-semibold">Growtalyst</span>
           </div>
           <button
