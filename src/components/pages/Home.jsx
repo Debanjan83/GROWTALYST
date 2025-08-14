@@ -90,7 +90,7 @@ const Home = () => {
     <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
 
       {/* Hero Section */}
-      <div className="text-white flex flex-col px-6 sm:px-12 lg:px-24 mt-28 text-center sm:text-left">
+      <div className="text-white flex flex-col px-6 sm:px-12 lg:px-24 mt-20 sm:mt-28 text-center sm:text-left">
         <p className="text-lg sm:text-2xl">Welcome to</p>
         <h1 className="text-4xl sm:text-6xl font-bold">
           <span className="text-green-500">GROW</span>
