@@ -2,9 +2,9 @@ import React, { useState, useRef } from 'react';
 import { motion } from "framer-motion";
 import { FiArrowUpLeft } from "react-icons/fi";
 import {
-  FaVideo, FaPaintBrush, FaBullhorn, FaUserPlus, FaRobot, FaChartLine,
+  FaVideo, FaPaintBrush, FaBullhorn, FaUserPlus, FaRobot,
   FaSearch, FaDollarSign, FaCode, FaMobileAlt, FaCube, FaHome,
-  FaTooth, FaHeartbeat, FaFilter, FaFileInvoiceDollar
+  FaTooth, FaHeartbeat, FaFilter, FaFileInvoiceDollar, FaMicrophoneAlt
 } from "react-icons/fa";
 
 // VideoCard Component
@@ -59,7 +59,7 @@ const Home = () => {
     { icon: <FaBullhorn />, title: "SMMA" },
     { icon: <FaUserPlus />, title: "Lead Gen" },
     { icon: <FaRobot />, title: "AI Automation with AI Agents" },
-    { icon: <FaChartLine />, title: "Digital Marketing" },
+    { icon: <FaMicrophoneAlt />, title: "Podcast Marketing" },
     { icon: <FaSearch />, title: "SEO" },
     { icon: <FaDollarSign />, title: "ROI Media Marketing" },
     { icon: <FaCode />, title: "Web Development" },
@@ -298,35 +298,35 @@ const Home = () => {
           {[
             {
               name: "Drew Thompson",
-              role: "Content Creator",
+              role: "Realtor",
               img: "/images/DREW THOMPSON.jpg",
               feedback: "\"I used to post content just to stay active, but it never really brought in business. After Growtalyst took over my media editing and marketing, the difference was crazy. My videos actually got attention, people started DMing me, and I closed three new clients in the first month just from that content. It felt like my brand finally had a voice people wanted to listen to.\"",
               author: "— Drew Thompson"
             },
             {
               name: "Chris Kouvatsos",
-              role: "Content Creator",
+              role: "Realtor",
               img: "/images/chris.kouvatsos.jpg",
               feedback: "\"Before Growtalyst stepped in, my content was there, but it wasn't doing much for the business. Once they took over the editing and marketing, everything changed my posts started getting real engagement, and people who actually needed my services began reaching out. I landed multiple quality leads in just a few weeks, all from the content they put out. It’s been a total game-changer.\"",
               author: "— Chris Kouvatsos"
             },
             {
               name: "Frank Del Rio",
-              role: "Content Creator",
+              role: "Realtor",
               img: "/images/FRANK DEL RIO.jpg",
               feedback: "\"I wasn’t seeing much traction from my posts content was live, but it wasn’t driving interest. Then Growtalyst handled my media editing and how I present it. Suddenly, people started reaching out. I had solid leads in the inbox within weeks, all thanks to the content they crafted. That’s when I knew things had actually shifted.\"",
               author: "— Frank Del Rio"
             },
             {
               name: "Lindsy Knapp",
-              role: "Content Creator",
+              role: "Realtor",
               img: "/images/LINDSY KNAPP.jpg",
               feedback: "\"Before working with Growtalyst, my social media felt like I was just posting for the sake of posting. They came in, cleaned up my content, and started creating videos that actually spoke to my audience. Within the first month, I noticed more people messaging me directly about listings, and a few of those turned into serious buyers. It didn’t feel like generic marketing it felt like they understood my business and my market.\"",
               author: "— Lindsy Knapp"
             },
             {
               name: "Kenny Simpson",
-              role: "Content Creator",
+              role: "Realtor",
               img: "/images/KENNY SIMPSON.jpg",
               feedback: "\"Before Growtalyst, my posts looked fine but didn’t bring in much business. After they started handling my editing and marketing, people actually began reaching out. I picked up a few solid leads in just weeks, all from the content they put out.\"",
               author: "— Kenny Simpson"
