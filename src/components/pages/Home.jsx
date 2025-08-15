@@ -137,7 +137,7 @@ const Home = () => {
       >
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 sm:gap-10 md:gap-12 mb-6 w-full max-w-6xl">
           {[
-            "/images/EXP REALTY.png", "/images/HIGH TIDE.jpg", "/images/MISSION LENDING GROUP.png",
+            "/images/EXP REALTY.jpg", "/images/HIGH TIDE.jpg", "/images/MISSION LENDING GROUP.png",
             "/images/PIER 4.png", "/images/SIRVA MORTGAGE.png", "/images/WESTERN PIONEER.png"
           ].map((logo, i) => (
             <img key={i} src={logo} alt={`Company ${i + 1}`} className="h-10 sm:h-12 w-auto object-contain mx-auto" />
@@ -300,31 +300,36 @@ const Home = () => {
               name: "Drew Thompson",
               role: "Content Creator",
               img: "/images/DREW THOMPSON.jpg",
-              feedback: "\"I used to post content just to stay active, but it never really brought in business. After Growtalyst took over my media editing and marketing, the difference was crazy. My videos actually got attention, people started DMing me, and I closed three new clients in the first month just from that content. It felt like my brand finally had a voice people wanted to listen to.\" - Drew Thompson"
+              feedback: "\"I used to post content just to stay active, but it never really brought in business. After Growtalyst took over my media editing and marketing, the difference was crazy. My videos actually got attention, people started DMing me, and I closed three new clients in the first month just from that content. It felt like my brand finally had a voice people wanted to listen to.\"",
+              author: "— Drew Thompson"
             },
             {
               name: "Chris Kouvatsos",
               role: "Content Creator",
               img: "/images/chris.kouvatsos.jpg",
-              feedback: "\"Before Growtalyst stepped in, my content was there, but it wasn't doing much for the business. Once they took over the editing and marketing, everything changed my posts started getting real engagement, and people who actually needed my services began reaching out. I landed multiple quality leads in just a few weeks, all from the content they put out. It’s been a total game-changer.\" - Chris Kouvatsos"
+              feedback: "\"Before Growtalyst stepped in, my content was there, but it wasn't doing much for the business. Once they took over the editing and marketing, everything changed my posts started getting real engagement, and people who actually needed my services began reaching out. I landed multiple quality leads in just a few weeks, all from the content they put out. It’s been a total game-changer.\"",
+              author: "— Chris Kouvatsos"
             },
             {
               name: "Frank Del Rio",
               role: "Content Creator",
               img: "/images/FRANK DEL RIO.jpg",
-              feedback: "\"I wasn’t seeing much traction from my posts content was live, but it wasn’t driving interest. Then Growtalyst handled my media editing and how I present it. Suddenly, people started reaching out. I had solid leads in the inbox within weeks, all thanks to the content they crafted. That’s when I knew things had actually shifted.\" - Frank Del Rio"
+              feedback: "\"I wasn’t seeing much traction from my posts content was live, but it wasn’t driving interest. Then Growtalyst handled my media editing and how I present it. Suddenly, people started reaching out. I had solid leads in the inbox within weeks, all thanks to the content they crafted. That’s when I knew things had actually shifted.\"",
+              author: "— Frank Del Rio"
             },
             {
               name: "Lindsy Knapp",
               role: "Content Creator",
               img: "/images/LINDSY KNAPP.jpg",
-              feedback: "\"Before Growtalyst stepped in, my content was okay, but it wasn’t bringing any traction. Once they started editing my media and dialing in the marketing, I started getting real inquiries out of the blue. I booked several quality leads within just a couple of weeks, all thanks to the content they created.\" - Lindsy Knapp"
+              feedback: "\"Before working with Growtalyst, my social media felt like I was just posting for the sake of posting. They came in, cleaned up my content, and started creating videos that actually spoke to my audience. Within the first month, I noticed more people messaging me directly about listings, and a few of those turned into serious buyers. It didn’t feel like generic marketing it felt like they understood my business and my market.\"",
+              author: "— Lindsy Knapp"
             },
             {
               name: "Kenny Simpson",
               role: "Content Creator",
               img: "/images/KENNY SIMPSON.jpg",
-              feedback: "\"Before Growtalyst, my posts looked fine but didn’t bring in much business. After they started handling my editing and marketing, people actually began reaching out. I picked up a few solid leads in just weeks, all from the content they put out.\" - Kenny Simpson"
+              feedback: "\"Before Growtalyst, my posts looked fine but didn’t bring in much business. After they started handling my editing and marketing, people actually began reaching out. I picked up a few solid leads in just weeks, all from the content they put out.\"",
+              author: "— Kenny Simpson"
             }
           ].map((testimonial, index) => (
             <motion.div
@@ -343,6 +348,7 @@ const Home = () => {
               <p className="text-base font-semibold">{testimonial.name}</p>
               <p className="text-sm text-gray-400">{testimonial.role}</p>
               <p className="mt-3 text-sm italic">{testimonial.feedback}</p>
+              <p className="mt-3 text-sm italic">{testimonial.author}</p>
             </motion.div>
           ))}
         </div>
