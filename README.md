@@ -1,12 +1,39 @@
-# React + Vite
+# GROWTALYST
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**GROWTALYST** is a modern React frontend scaffolded with **Vite**, offering fast development with hot module replacement (HMR), built-in ESLint integration, and a clean project structure.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
 
-## Expanding the ESLint configuration
+- **Vite-powered** build system: Blazing-fast development and optimized production builds  
+- **React** support with JSX and advanced tooling  
+- **ESLint** configuration bundled for code consistency  
+- Prepared for **TypeScript** and enhancement with type-aware linting (via community guides)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+##  Project Structure
+
+```text
+GROWTALYST/
+├── public/           # Static files (if any)
+├── src/
+│   ├── App.jsx       # Main application component
+│   ├── index.jsx     # Entry point
+│   └── ...           # Additional source files
+├── .gitignore        # Excluded files
+├── index.html        # HTML template
+├── package.json      # Project scripts & dependencies
+├── vite.config.js    # Vite configuration
+├── eslint.config.js  # ESLint setup
+└── README.md         # Project documentation (you are reading it!)
+```
+
+## About
+
+This starter empowers you with a streamlined React + Vite setup, tailor-made for rapid development while staying highly customizable. Let me know if you'd like to deepen it with examples like route setup, automated testing, CI/CD integration, or design frameworks!
+
+## Let me know:
+
+Would you like this README adjusted—perhaps with badges, screenshots, environment variable instructions, or extra sections like testing or deployment? I’m happy to refine it further to fit your vision!
