@@ -7,7 +7,6 @@ import {
   FaTooth, FaHeartbeat, FaFilter, FaFileInvoiceDollar, FaMicrophoneAlt
 } from "react-icons/fa";
 
-// VideoCard Component
 const VideoCard = ({ src, currentPlaying, setCurrentPlaying, videoIndex }) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -89,7 +88,6 @@ const Home = () => {
   return (
     <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
 
-      {/* Hero Section */}
       <div className="text-white flex flex-col px-6 sm:px-12 lg:px-24 mt-20 sm:mt-28 text-center sm:text-left">
         <p className="text-lg sm:text-2xl">Welcome to</p>
         <h1 className="text-4xl sm:text-6xl font-bold">
@@ -114,7 +112,6 @@ const Home = () => {
         </p>
       </div>
 
-      {/* Email Button */}
       <div className="px-6 sm:px-12 lg:px-24 flex justify-center sm:justify-start">
         <a href="mailto:sayan.growtalyst.work@gmail.com">
           <button className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm sm:text-base font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 hover:text-white mt-7">
@@ -127,7 +124,6 @@ const Home = () => {
 
       <div className="border-t border-white/60 mt-5"></div>
 
-      {/* Companies Worked With */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -153,7 +149,6 @@ const Home = () => {
 
       <div className="border-t border-white/60 mt-8"></div>
 
-      {/* Services */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -184,7 +179,6 @@ const Home = () => {
 
       <div className="border-t border-white/60 mt-16"></div>
 
-      {/* Industries */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -215,7 +209,6 @@ const Home = () => {
 
       <div className="border-t border-white/60 mt-16"></div>
 
-      {/* Video Gallery */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -242,7 +235,6 @@ const Home = () => {
 
       <div className="border-t border-white/60 mt-16"></div>
 
-      {/* Trusted by Clients Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -282,7 +274,6 @@ const Home = () => {
 
       <div className="border-t border-white/60 mt-16"></div>
 
-      {/* Testimonials Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

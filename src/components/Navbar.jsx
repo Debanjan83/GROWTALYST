@@ -17,7 +17,6 @@ const Navbar = () => {
     `flex items-center gap-3 px-4 py-3 rounded-lg transition-colors
      ${isActive ? 'bg-white/10 text-green-400' : 'text-white hover:bg-white/5'}`;
 
-  // Outside click handler
   useEffect(() => {
     if (!menuOpen) return;
 
@@ -40,10 +39,10 @@ const Navbar = () => {
   return (
     <>
       <nav className="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-md shadow-md">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          
-          {/* Logo */}
-          <NavLink to="/" onClick={() => setMenuOpen(false)}>
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-8 py-4 
+                  md:grid md:grid-cols-3 md:items-center">
+
+          <NavLink to="/" onClick={() => setMenuOpen(false)} className="flex items-center">
             <img
               width={60}
               height={60}
@@ -53,42 +52,54 @@ const Navbar = () => {
             />
           </NavLink>
 
-          {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-8 text-white">
+          <ul className="hidden md:flex justify-center space-x-10 text-white">
             <li><NavLink to="/" className={linkClasses}>Home</NavLink></li>
             <li><NavLink to="/about" className={linkClasses}>About</NavLink></li>
             <li><NavLink to="/work" className={linkClasses}>Work</NavLink></li>
             <li><NavLink to="/contact" className={linkClasses}>Contact</NavLink></li>
           </ul>
 
-          {/* WhatsApp (Desktop) */}
-          <a
-            href="https://wa.me/919874223031"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:block"
-          >
-            <button
-              type="button"
-              className="flex items-center gap-2 bg-gradient-to-r from-green-400 via-green-500 to-green-600 
-                         hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 
-                         shadow-lg shadow-green-500/50 font-medium rounded-full text-sm px-4 py-2 cursor-pointer transition-transform hover:scale-105"
+          <div className="hidden md:flex justify-end gap-4">
+            <a
+              href="https://wa.me/919874223031"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <FaWhatsapp size={16} /> Whatsapp
-            </button>
-          </a>
+              <button
+                type="button"
+                className="flex items-center gap-2 bg-gradient-to-r from-green-400 via-green-500 to-green-600 
+                     hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 
+                     shadow-lg shadow-green-500/50 font-medium rounded-full text-sm px-4 py-2 cursor-pointer transition-transform hover:scale-105"
+              >
+                <FaWhatsapp size={16} /> Whatsapp
+              </button>
+            </a>
 
-          {/* Hamburger (Mobile) */}
+            <a
+              href="https://calendly.com/yourusername/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                type="button"
+                className="flex items-center gap-2 bg-gradient-to-r from-green-400 via-green-500 to-green-600
+                     hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300
+                     shadow-lg shadow-green-500/50 font-medium rounded-full text-sm px-4 py-2 cursor-pointer transition-transform hover:scale-105"
+              >
+                📅 Book Schedule
+              </button>
+            </a>
+          </div>
+
           <button
             onClick={() => setMenuOpen((prev) => !prev)}
-            className="md:hidden text-white rounded-full p-2 border border-white/10 hover:bg-white/5 transition"
+            className="md:hidden ml-auto text-white rounded-full p-2 border border-white/10 hover:bg-white/5 transition"
           >
             {menuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
           </button>
         </div>
       </nav>
 
-      {/* Overlay (Dim background) */}
       {menuOpen && (
         <div
           className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 transition-opacity"
@@ -96,14 +107,12 @@ const Navbar = () => {
         ></div>
       )}
 
-      {/* Mobile Drawer */}
       <aside
         ref={drawerRef}
         className={`fixed top-0 left-0 h-full w-72 md:hidden
                     bg-black text-white border-r border-white/10 shadow-2xl z-50
                     transition-transform duration-300 ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >
-        {/* Drawer Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
           <div className="flex items-center gap-3">
             <img src="/images/growtalyst.png" alt="Growtalyst" className="w-9 h-9" />
@@ -116,7 +125,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Drawer Links */}
         <div className="px-3 py-4 space-y-1">
           <NavLink to="/" className={mobileLinkClasses} onClick={() => setMenuOpen(false)}>
             <FiHome /> Home
@@ -132,8 +140,7 @@ const Navbar = () => {
           </NavLink>
         </div>
 
-        {/* CTA Button */}
-        <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-white/10">
+        <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-white/10 space-y-2">
           <a href="https://wa.me/919874223031" target="_blank" rel="noopener noreferrer">
             <button
               type="button"
@@ -143,6 +150,18 @@ const Navbar = () => {
               onClick={() => setMenuOpen(false)}
             >
               <FaWhatsapp size={16} /> Whatsapp
+            </button>
+          </a> <br />
+
+          <a href="#">
+            <button
+              type="button"
+              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-green-400 via-green-500 to-green-600 
+                         hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 
+                         shadow-lg shadow-green-500/50 font-medium rounded-full text-sm px-4 py-3"
+              onClick={() => setMenuOpen(false)}
+            >
+              📅 Book Schedule
             </button>
           </a>
         </div>

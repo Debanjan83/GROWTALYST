@@ -43,7 +43,6 @@ const Work = () => {
 
   return (
     <section className="py-16 px-6 sm:px-12">
-      {/* Heading */}
       <motion.div
         className="text-center text-white mb-12 mt-14"
         initial={{ opacity: 0, y: 30 }}
@@ -59,7 +58,6 @@ const Work = () => {
         </p>
       </motion.div>
 
-      {/* Grid layout */}
       <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
         {services.map((service, index) => (
           <motion.div

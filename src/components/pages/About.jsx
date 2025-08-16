@@ -8,7 +8,6 @@ const About = () => {
     { number: '92+', label: 'Clients', desc: 'Making us one of the leading web design companies around the globe.' },
   ];
 
-  // Variants for animation
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
     visible: (i = 0) => ({
@@ -22,7 +21,6 @@ const About = () => {
     <section className="py-16 px-6 sm:px-20">
       <div className="flex flex-col md:flex-row gap-20 text-white max-w-7xl mx-auto">
         
-        {/* Left Text */}
         <motion.div 
           className="mt-10 md:w-1/2"
           initial="hidden"
@@ -84,7 +82,6 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/* Right Stats */}
         <motion.div 
           className="md:w-1/2 flex flex-col justify-center mt-10 md:mt-0"
           initial="hidden"
