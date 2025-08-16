@@ -113,7 +113,6 @@ const Navbar = () => {
             onClick={() => setMenuOpen(false)}
             className="text-white rounded-full p-2 hover:bg-white/5 transition"
           >
-            <FaTimes size={18} />
           </button>
         </div>
 
