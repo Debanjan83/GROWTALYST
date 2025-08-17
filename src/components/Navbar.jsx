@@ -76,7 +76,7 @@ const Navbar = () => {
             </a>
 
             <a
-              href="https://calendly.com/yourusername/30min"
+              href="https://calendly.com/sayan-growtalyst-work/30min"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -153,7 +153,7 @@ const Navbar = () => {
             </button>
           </a> <br />
 
-          <a href="#">
+          <a href="https://calendly.com/sayan-growtalyst-work/30min">
             <button
               type="button"
               className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-green-400 via-green-500 to-green-600 
