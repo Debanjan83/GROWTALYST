@@ -61,7 +61,7 @@ const Navbar = () => {
 
           <div className="hidden md:flex justify-end gap-4">
             <a
-              href="https://wa.me/919874223031"
+              href="https://wa.me/917602888689"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -141,7 +141,7 @@ const Navbar = () => {
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-white/10 space-y-2">
-          <a href="https://wa.me/919874223031" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/917602888689" target="_blank" rel="noopener noreferrer">
             <button
               type="button"
               className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-green-400 via-green-500 to-green-600 

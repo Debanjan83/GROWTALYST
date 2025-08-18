@@ -33,7 +33,7 @@ const Contact = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <a href="tel:+919874223031">
+          <a href="tel:+917602888689">
             <button
               type="button"
               className="group bg-gradient-to-r from-green-400 via-green-500 to-green-600 p-4 rounded-full shadow-lg shadow-green-500/50 hover:scale-110 transition-transform cursor-pointer"
@@ -51,7 +51,7 @@ const Contact = () => {
             </button>
           </a>
 
-          <a href="https://wa.me/919874223031" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/917602888689" target="_blank" rel="noopener noreferrer">
             <button
               type="button"
               className="group bg-gradient-to-r from-green-400 via-green-500 to-green-600 p-4 rounded-full shadow-lg shadow-green-500/50 hover:scale-110 transition-transform cursor-pointer"
@@ -60,41 +60,41 @@ const Contact = () => {
             </button>
           </a>
 
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          {/* <a href="#" target="_blank" rel="noopener noreferrer"> */}
             <button
               type="button"
               className="group bg-gradient-to-r from-green-400 via-green-500 to-green-600 p-4 rounded-full shadow-lg shadow-green-500/50 hover:scale-110 transition-transform cursor-pointer"
             >
               <img width={20} height={20} src="/images/discord.png" alt="Discord" className="group-hover:rotate-12 transition-transform" />
             </button>
-          </a>
+          {/* </a> */}
 
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          {/* <a href="#" target="_blank" rel="noopener noreferrer"> */}
             <button
               type="button"
               className="group bg-gradient-to-r from-green-400 via-green-500 to-green-600 p-4 rounded-full shadow-lg shadow-green-500/50 hover:scale-110 transition-transform cursor-pointer"
             >
               <img width={20} height={20} src="/images/instagram.png" alt="Instagram" className="group-hover:rotate-12 transition-transform" />
             </button>
-          </a>
+          {/* </a> */}
 
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          {/* <a href="#" target="_blank" rel="noopener noreferrer"> */}
             <button
               type="button"
               className="group bg-gradient-to-r from-green-400 via-green-500 to-green-600 p-4 rounded-full shadow-lg shadow-green-500/50 hover:scale-110 transition-transform cursor-pointer"
             >
               <img width={20} height={20} src="/images/linkedin.png" alt="LinkedIn" className="group-hover:rotate-12 transition-transform" />
             </button>
-          </a>
+          {/* </a> */}
 
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          {/* <a href="#" target="_blank" rel="noopener noreferrer"> */}
             <button
               type="button"
               className="group bg-gradient-to-r from-green-400 via-green-500 to-green-600 p-4 rounded-full shadow-lg shadow-green-500/50 hover:scale-110 transition-transform cursor-pointer"
             >
               <img width={20} height={20} src="/images/tik-tok.png" alt="TikTok" className="group-hover:rotate-12 transition-transform" />
             </button>
-          </a>
+          {/* </a> */}
         </motion.div>
 
         <motion.div
